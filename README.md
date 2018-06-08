@@ -2,10 +2,18 @@
 
 ### Objectives
 
-### Task
-1. Read CSV files
-2. Save it to the DB
+### Tasks
+##### ~Read CSV files~
 
-   Make it reusable
-3. Metaprogramming - timer
-4. Validation
+###### Metaprogramming - timer
+
+##### Validation
+* ~Remove the invalid rows~
+* Put them somewhere for later cleaning
+
+##### Data Transformer
+* Split the date up into three columns Year, Month, Day
+
+##### Save it to the DB
+* Make it reusable
+* Normalising? is it needed or beneficial
