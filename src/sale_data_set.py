@@ -89,13 +89,19 @@ column_validations = dict([
 
 
 def validate_data_set(data_set):
-    invalid_rows = []
+    invalid_indexes = []
     for key, value in column_validations.items():
         if key in data_set:
             for i, item in data_set[key].iteritems():
                 for validator in value:
                     valid = validator(item)
                     if not valid:
-                        invalid_rows.append(i)
+                        invalid_indexes.append(i)
                         break
-    return invalid_rows
+    return invalid_indexes
+
+
+def filter_validation_results(data_set, invalid_rows):
+    valid_data_set = data_set[~data_set.index.isin(invalid_rows)]
+    invalid_data_set = data_set[data_set.index.isin(invalid_rows)]
+    return valid_data_set, invalid_data_set
