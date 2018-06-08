@@ -9,6 +9,7 @@
 
 ###### Validation
 ~Remove the invalid rows~
+
 Put them somewhere for later cleaning
 
 ###### Data Transformer
