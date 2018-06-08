@@ -15,7 +15,7 @@ def load_csv(file, names=None, coverters=None, data_types=None):
 def save_sales_to_db():
     print("Saving sales data to db")
     ds = load_csv("../resources/pp-2018.csv", names=sds.column_names)
-    sds.validate_id_column(ds['id'])
+    sds.validate_data_set(ds)
     print(ds['id'])
 
 
