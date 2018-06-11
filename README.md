@@ -17,6 +17,7 @@
 
 ##### Data Transformer
 * ~Split the date up into three columns Year, Month, Day~
+* Add longitude, latitude to the dataframe
 
-##### Persit Part II - Transformed
+##### ~Persit Part II - Transformed~
 
